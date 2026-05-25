@@ -1,0 +1,41 @@
+{
+  "name": "@anmitalidev/otpkit-solid",
+  "version": "0.1.0",
+  "description": "Headless one-time code input for SolidJS.",
+  "license": "AGPL-3.0-only",
+  "author": "AnmiTaliDev <anmitalidev@nuros.org>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnmiTaliDev/otpkit.git",
+    "directory": "packages/solid"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build && tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@anmitalidev/otpkit-core": "^0.1.0"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.9.0"
+  },
+  "devDependencies": {
+    "solid-js": "^1.9.17",
+    "vite": "^8.3.4",
+    "vite-plugin-solid": "^2.11.14"
+  }
+}
