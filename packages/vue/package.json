@@ -1,0 +1,39 @@
+{
+  "name": "@anmitalidev/otpkit-vue",
+  "version": "0.1.0",
+  "description": "Headless one-time code input for Vue 3.",
+  "license": "AGPL-3.0-only",
+  "author": "AnmiTaliDev <anmitalidev@nuros.org>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnmiTaliDev/otpkit.git",
+    "directory": "packages/vue"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@anmitalidev/otpkit-core": "^0.1.0"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "vue": "^3.5.43"
+  }
+}
