@@ -1,0 +1,44 @@
+{
+  "name": "@anmitalidev/otpkit-angular",
+  "version": "0.1.0",
+  "description": "Headless one-time code input for Angular.",
+  "license": "AGPL-3.0-only",
+  "author": "AnmiTaliDev <anmitalidev@nuros.org>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnmiTaliDev/otpkit.git",
+    "directory": "packages/angular"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "scripts": {
+    "build": "ng build",
+    "typecheck": "ngc -p tsconfig.spec.json --noEmit",
+    "test": "ng test --no-watch --no-progress"
+  },
+  "dependencies": {
+    "@anmitalidev/otpkit-core": "^0.1.0",
+    "tslib": "^2.3.0"
+  },
+  "peerDependencies": {
+    "@angular/core": "^22.0.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^22.2.2",
+    "@angular/cli": "^22.2.2",
+    "@angular/compiler": "^22.2.2",
+    "@angular/compiler-cli": "^22.2.2",
+    "@angular/core": "^22.2.2",
+    "@angular/platform-browser": "^22.2.2",
+    "ng-packagr": "^22.2.4",
+    "rxjs": "^7.8.1"
+  },
+  "module": "./dist/fesm2022/anmitalidev-otpkit-angular.mjs",
+  "typings": "./dist/types/anmitalidev-otpkit-angular.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/anmitalidev-otpkit-angular.d.ts",
+      "default": "./dist/fesm2022/anmitalidev-otpkit-angular.mjs"
+    }
+  }
+}

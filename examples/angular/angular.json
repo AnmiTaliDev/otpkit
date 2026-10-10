@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "cli": { "analytics": false },
+  "projects": {
+    "otpkit-example-angular": {
+      "projectType": "application",
+      "root": ".",
+      "sourceRoot": "src",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "src/main.ts",
+            "index": "src/index.html",
+            "tsConfig": "tsconfig.json"
+          }
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "options": { "buildTarget": "otpkit-example-angular:build" }
+        }
+      }
+    }
+  }
+}

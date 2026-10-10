@@ -1,0 +1,5 @@
+{
+  "dest": "dist",
+  "allowedNonPeerDependencies": ["^@anmitalidev/otpkit-core$"],
+  "lib": { "entryFile": "src/index.ts" }
+}

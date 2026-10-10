@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "cli": { "analytics": false },
+  "projects": {
+    "otpkit-angular": {
+      "projectType": "library",
+      "root": ".",
+      "sourceRoot": "src",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "options": { "project": "ng-package.json", "tsConfig": "tsconfig.lib.json" }
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": { "tsConfig": "tsconfig.spec.json", "buildTarget": "otpkit-angular:build" }
+        }
+      }
+    }
+  }
+}

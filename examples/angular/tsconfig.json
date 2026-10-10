@@ -1,0 +1,7 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": { "lib": ["ES2022", "DOM"] },
+  "angularCompilerOptions": { "strictTemplates": true },
+  "files": ["src/main.ts"],
+  "include": ["src"]
+}

@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": { "noEmit": false, "declaration": true, "outDir": "./out-tsc/lib" },
+  "angularCompilerOptions": { "compilationMode": "partial" },
+  "exclude": ["**/*.spec.ts"]
+}
